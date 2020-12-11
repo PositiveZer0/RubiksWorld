@@ -1,0 +1,7 @@
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web.Infrastructure\bin\Debug\netstandard2.1\RubiksWorld.Web.Infrastructure.deps.json
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web.Infrastructure\bin\Debug\netstandard2.1\RubiksWorld.Web.Infrastructure.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web.Infrastructure\bin\Debug\netstandard2.1\RubiksWorld.Web.Infrastructure.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web.Infrastructure\obj\Debug\netstandard2.1\RubiksWorld.Web.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web.Infrastructure\obj\Debug\netstandard2.1\RubiksWorld.Web.Infrastructure.AssemblyInfo.cs
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web.Infrastructure\obj\Debug\netstandard2.1\RubiksWorld.Web.Infrastructure.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web.Infrastructure\obj\Debug\netstandard2.1\RubiksWorld.Web.Infrastructure.pdb

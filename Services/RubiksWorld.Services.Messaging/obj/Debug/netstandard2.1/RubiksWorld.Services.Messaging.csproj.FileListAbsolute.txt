@@ -1,0 +1,8 @@
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Messaging\bin\Debug\netstandard2.1\RubiksWorld.Services.Messaging.deps.json
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Messaging\bin\Debug\netstandard2.1\RubiksWorld.Services.Messaging.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Messaging\bin\Debug\netstandard2.1\RubiksWorld.Services.Messaging.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Messaging\obj\Debug\netstandard2.1\RubiksWorld.Services.Messaging.csprojAssemblyReference.cache
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Messaging\obj\Debug\netstandard2.1\RubiksWorld.Services.Messaging.AssemblyInfoInputs.cache
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Messaging\obj\Debug\netstandard2.1\RubiksWorld.Services.Messaging.AssemblyInfo.cs
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Messaging\obj\Debug\netstandard2.1\RubiksWorld.Services.Messaging.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Messaging\obj\Debug\netstandard2.1\RubiksWorld.Services.Messaging.pdb

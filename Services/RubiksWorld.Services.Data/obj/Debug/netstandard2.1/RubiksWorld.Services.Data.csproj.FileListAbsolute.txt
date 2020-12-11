@@ -1,0 +1,15 @@
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Services.Data.deps.json
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Services.Data.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Services.Data.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Data.Common.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Data.Models.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Services.Mapping.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Data.Common.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Data.Models.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Services.Mapping.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.csprojAssemblyReference.cache
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.AssemblyInfoInputs.cache
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.AssemblyInfo.cs
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.csproj.CopyComplete
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.pdb
