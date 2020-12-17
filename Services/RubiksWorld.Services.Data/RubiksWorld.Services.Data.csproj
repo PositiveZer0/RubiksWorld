@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\RubiksWorld.Data.Common\RubiksWorld.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\RubiksWorld.Data.Models\RubiksWorld.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Web\RubiksWorld.Web.ViewModels\RubiksWorld.Web.ViewModels.csproj" />
     <ProjectReference Include="..\RubiksWorld.Services.Mapping\RubiksWorld.Services.Mapping.csproj" />
   </ItemGroup>
 

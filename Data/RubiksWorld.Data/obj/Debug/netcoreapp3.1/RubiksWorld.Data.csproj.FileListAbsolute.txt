@@ -16,3 +16,5 @@ C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data\obj\Debug\net
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data\obj\Debug\netcoreapp3.1\RubiksWorld.Data.csproj.CopyComplete
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data\obj\Debug\netcoreapp3.1\RubiksWorld.Data.dll
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data\obj\Debug\netcoreapp3.1\RubiksWorld.Data.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data\bin\Debug\netcoreapp3.1\RubiksWorld.Services.Mapping.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data\bin\Debug\netcoreapp3.1\RubiksWorld.Services.Mapping.pdb

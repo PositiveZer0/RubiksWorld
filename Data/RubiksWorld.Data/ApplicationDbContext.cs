@@ -6,11 +6,10 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using RubiksWorld.Data.Common.Models;
-    using RubiksWorld.Data.Models;
-
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
+    using RubiksWorld.Data.Common.Models;
+    using RubiksWorld.Data.Models;
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
@@ -24,7 +23,11 @@
         {
         }
 
-        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Subcategory> Subtitles { get; set; }
+
+        public DbSet<Subcategory> Subcategories { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 

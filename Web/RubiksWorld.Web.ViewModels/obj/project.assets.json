@@ -415,7 +415,8 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.9",
-          "RubiksWorld.Data.Common": "1.0.0"
+          "RubiksWorld.Data.Common": "1.0.0",
+          "RubiksWorld.Services.Mapping": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RubiksWorld.Data.Models.dll": {}

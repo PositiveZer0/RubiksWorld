@@ -415,7 +415,8 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.9",
-          "RubiksWorld.Data.Common": "1.0.0"
+          "RubiksWorld.Data.Common": "1.0.0",
+          "RubiksWorld.Services.Mapping": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RubiksWorld.Data.Models.dll": {}
@@ -435,6 +436,20 @@
         },
         "runtime": {
           "bin/placeholder/RubiksWorld.Services.Mapping.dll": {}
+        }
+      },
+      "RubiksWorld.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "RubiksWorld.Data.Models": "1.0.0",
+          "RubiksWorld.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RubiksWorld.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RubiksWorld.Web.ViewModels.dll": {}
         }
       }
     }
@@ -1308,6 +1323,11 @@
       "type": "project",
       "path": "../RubiksWorld.Services.Mapping/RubiksWorld.Services.Mapping.csproj",
       "msbuildProject": "../RubiksWorld.Services.Mapping/RubiksWorld.Services.Mapping.csproj"
+    },
+    "RubiksWorld.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/RubiksWorld.Web.ViewModels/RubiksWorld.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/RubiksWorld.Web.ViewModels/RubiksWorld.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1315,6 +1335,7 @@
       "RubiksWorld.Data.Common >= 1.0.0",
       "RubiksWorld.Data.Models >= 1.0.0",
       "RubiksWorld.Services.Mapping >= 1.0.0",
+      "RubiksWorld.Web.ViewModels >= 1.0.0",
       "StyleCop.Analyzers >= 1.2.0-beta.205"
     ]
   },
@@ -1356,6 +1377,9 @@
             },
             "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Services\\RubiksWorld.Services.Mapping\\RubiksWorld.Services.Mapping.csproj": {
               "projectPath": "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Services\\RubiksWorld.Services.Mapping\\RubiksWorld.Services.Mapping.csproj"
+            },
+            "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Web\\RubiksWorld.Web.ViewModels\\RubiksWorld.Web.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Web\\RubiksWorld.Web.ViewModels\\RubiksWorld.Web.ViewModels.csproj"
             }
           }
         }

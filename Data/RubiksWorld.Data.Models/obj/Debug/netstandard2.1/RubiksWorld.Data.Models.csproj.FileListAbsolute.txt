@@ -9,3 +9,5 @@ C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data.Models\obj\De
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data.Models\obj\Debug\netstandard2.1\RubiksWorld.Data.Models.csproj.CopyComplete
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data.Models\obj\Debug\netstandard2.1\RubiksWorld.Data.Models.dll
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data.Models\obj\Debug\netstandard2.1\RubiksWorld.Data.Models.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data.Models\bin\Debug\netstandard2.1\RubiksWorld.Services.Mapping.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Data\RubiksWorld.Data.Models\bin\Debug\netstandard2.1\RubiksWorld.Services.Mapping.pdb

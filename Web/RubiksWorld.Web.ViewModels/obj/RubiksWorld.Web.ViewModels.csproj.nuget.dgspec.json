@@ -99,6 +99,9 @@
             "projectReferences": {
               "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Data\\RubiksWorld.Data.Common\\RubiksWorld.Data.Common.csproj": {
                 "projectPath": "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Data\\RubiksWorld.Data.Common\\RubiksWorld.Data.Common.csproj"
+              },
+              "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Services\\RubiksWorld.Services.Mapping\\RubiksWorld.Services.Mapping.csproj": {
+                "projectPath": "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Services\\RubiksWorld.Services.Mapping\\RubiksWorld.Services.Mapping.csproj"
               }
             }
           }

@@ -12,8 +12,8 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("RubiksWorld.Data", "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Data\\RubiksWorld.Data", "RubiksWorld.Data.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("RubiksWorld.Web", "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Web\\RubiksWorld.Web", "RubiksWorld.Web.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("RubiksWorld.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Data\\RubiksWorld.Data", "RubiksWorld.Data.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("RubiksWorld.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\azsum\\Desktop\\ASP.NET\\RubiksWorldv2\\Web\\RubiksWorld.Web", "RubiksWorld.Web.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("RubiksWorld.Web.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

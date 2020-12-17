@@ -12,6 +12,7 @@
           "RubiksWorld.Data.Common": "1.0.0",
           "RubiksWorld.Data.Models": "1.0.0",
           "RubiksWorld.Services.Mapping": "1.0.0",
+          "RubiksWorld.Web.ViewModels": "1.0.0",
           "StyleCop.Analyzers": "1.2.0-beta.205"
         },
         "runtime": {
@@ -374,7 +375,8 @@
       "RubiksWorld.Data.Models/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.9",
-          "RubiksWorld.Data.Common": "1.0.0"
+          "RubiksWorld.Data.Common": "1.0.0",
+          "RubiksWorld.Services.Mapping": "1.0.0"
         },
         "runtime": {
           "RubiksWorld.Data.Models.dll": {}
@@ -386,6 +388,15 @@
         },
         "runtime": {
           "RubiksWorld.Services.Mapping.dll": {}
+        }
+      },
+      "RubiksWorld.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "RubiksWorld.Data.Models": "1.0.0",
+          "RubiksWorld.Services.Mapping": "1.0.0"
+        },
+        "runtime": {
+          "RubiksWorld.Web.ViewModels.dll": {}
         }
       }
     }
@@ -652,6 +663,11 @@
       "sha512": ""
     },
     "RubiksWorld.Services.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RubiksWorld.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

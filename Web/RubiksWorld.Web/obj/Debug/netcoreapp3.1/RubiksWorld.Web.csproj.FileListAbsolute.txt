@@ -435,13 +435,11 @@ C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netco
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.TagHelpers.input.cache
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.TagHelpers.output.cache
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.RazorCoreGenerate.cache
-C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\Dashboard\Index.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\_ViewImports.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administration\Views\_ViewStart.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Settings\Index.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -454,3 +452,6 @@ C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netco
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.csproj.CopyComplete
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.dll
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Forum\Index.cshtml.g.cs
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Forum\IndexOld.cshtml.g.cs
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Forum\Create.cshtml.g.cs

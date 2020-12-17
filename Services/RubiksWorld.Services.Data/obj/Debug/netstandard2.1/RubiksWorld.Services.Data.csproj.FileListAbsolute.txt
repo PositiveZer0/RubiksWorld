@@ -13,3 +13,5 @@ C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.csproj.CopyComplete
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.dll
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\obj\Debug\netstandard2.1\RubiksWorld.Services.Data.pdb
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Web.ViewModels.dll
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Services\RubiksWorld.Services.Data\bin\Debug\netstandard2.1\RubiksWorld.Web.ViewModels.pdb

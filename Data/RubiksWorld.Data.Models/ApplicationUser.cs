@@ -10,7 +10,7 @@ namespace RubiksWorld.Data.Models
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
     {
-        public ApplicationUser()
+        public ApplicationUser() 
         {
             this.Id = Guid.NewGuid().ToString();
             this.Roles = new HashSet<IdentityUserRole<string>>();

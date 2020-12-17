@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Services\RubiksWorld.Services.Mapping\RubiksWorld.Services.Mapping.csproj" />
     <ProjectReference Include="..\RubiksWorld.Data.Common\RubiksWorld.Data.Common.csproj" />
   </ItemGroup>
   

@@ -23,4 +23,8 @@
     <ProjectReference Include="..\..\Services\RubiksWorld.Services.Mapping\RubiksWorld.Services.Mapping.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Administration\Dashboard\" />
+  </ItemGroup>
+
 </Project>
