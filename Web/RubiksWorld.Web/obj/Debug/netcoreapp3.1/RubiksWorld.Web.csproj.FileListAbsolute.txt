@@ -452,6 +452,7 @@ C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netco
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.csproj.CopyComplete
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.dll
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\RubiksWorld.Web.pdb
-C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Forum\Index.cshtml.g.cs
 C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Forum\IndexOld.cshtml.g.cs
-C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Forum\Create.cshtml.g.cs
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Create.cshtml.g.cs
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Post.cshtml.g.cs
+C:\Users\azsum\Desktop\ASP.NET\RubiksWorldv2\Web\RubiksWorld.Web\obj\Debug\netcoreapp3.1\Razor\Views\Forum\Index.cshtml.g.cs
