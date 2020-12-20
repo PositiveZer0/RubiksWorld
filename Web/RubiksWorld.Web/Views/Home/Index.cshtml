@@ -1,9 +1,131 @@
 ﻿@using RubiksWorld.Common
 @{
-    this.ViewData["Title"] = "Home Page";
+    this.ViewData["Title"] = "Rubik's World";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<link href="~/css/stopwatch.css" rel="stylesheet" type="text/css">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+          rel="stylesheet" />
+</head>
+
+<body>
+    <div class="stopwatch">
+        <h1><span class="gold">CUBE</span> TIMER</h1>
+        <div>
+            <span class="time" id="display">00:00:00</span>
+        </div>
+
+        <h1 class="hide" onkeypress="start()"></h1>
+        <div class="controls">
+            <button class="buttonPlay">
+                <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+
+                <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+            </button>
+
+            <button class="buttonReset">
+                <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    let isStarted = false;
+    document.onkeydown = function(evt) {
+    evt = evt || window.event;
+        if (evt.keyCode == 32 && isStarted == false) {
+            isStarted = true;
+            reset();
+            start();
+        }
+        else if (evt.keyCode == 32 && isStarted == true) {
+            isStarted = false;
+            pause();
+        }
+    };
+
+    function timeToString(time) {
+        let diffInHrs = time / 3600000;
+        let hh = Math.floor(diffInHrs);
+
+        let diffInMin = (diffInHrs - hh) * 60;
+        let mm = Math.floor(diffInMin);
+
+        let diffInSec = (diffInMin - mm) * 60;
+        let ss = Math.floor(diffInSec);
+
+        let diffInMs = (diffInSec - ss) * 100;
+        let ms = Math.floor(diffInMs);
+
+        let formattedMM = mm.toString().padStart(2, "0");
+        let formattedSS = ss.toString().padStart(2, "0");
+        let formattedMS = ms.toString().padStart(2, "0");
+
+        return `${formattedMM}:${formattedSS}:${formattedMS}`;
+    }
+
+    // Declare variables to use in our functions below
+
+    let startTime;
+    let elapsedTime = 0;
+    let timerInterval;
+
+    // Create function to modify innerHTML
+
+    function print(txt) {
+        document.getElementById("display").innerHTML = txt;
+    }
+
+    // Create "start", "pause" and "reset" functions
+
+    function start() {
+        startTime = Date.now() - elapsedTime;
+        timerInterval = setInterval(function printTime() {
+            elapsedTime = Date.now() - startTime;
+            print(timeToString(elapsedTime));
+        }, 10);
+        showButton("PAUSE");
+    }
+
+    function pause() {
+        clearInterval(timerInterval);
+        showButton("PLAY");
+    }
+
+    function reset() {
+        clearInterval(timerInterval);
+        print("00:00:00");
+        elapsedTime = 0;
+        showButton("PLAY");
+    }
+
+    // Create function to display buttons
+
+    function showButton(buttonKey) {
+        const buttonToShow = buttonKey === "PLAY" ? playButton : pauseButton;
+        const buttonToHide = buttonKey === "PLAY" ? pauseButton : playButton;
+        buttonToShow.style.display = "block";
+        buttonToHide.style.display = "none";
+    }
+    // Create event listeners
+
+    let playButton = document.getElementById("playButton");
+    let pauseButton = document.getElementById("pauseButton");
+    let resetButton = document.getElementById("resetButton");
+
+    playButton.addEventListener("click", start);
+    pauseButton.addEventListener("click", pause);
+    resetButton.addEventListener("click", reset);
+</script>
