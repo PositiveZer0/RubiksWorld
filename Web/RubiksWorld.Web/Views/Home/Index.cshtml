@@ -36,11 +36,27 @@
             </button>
         </div>*@
     </div>
+    <div style="height: 135px; overflow: auto; padding: 5px; margin: 10px; border: 1px solid #000000; background: #fff;">
+        <table cellpadding="0" cellspacing="0">
+            <tbody id="lastTime">
+                <tr id="lastEl">
+                    <td style="padding: 0 5px; margin: 0px;" >Hello</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p>Average: <span id="averageTime"></span></p>
+    </div>
+    <span id="lastTime" display="block"></span>
     <script src="script.js"></script>
 </body>
 </html>
 
 <script>
+    let allTimes = [];
+    var numberOfSolves = 1;
+
     window.onload = function () {
         this.makeScramble()
     }
@@ -108,6 +124,7 @@
 
     function pause() {
         clearInterval(timerInterval);
+        displayLastTime();
         //showButton("PLAY");
     }
 
@@ -138,6 +155,23 @@
 
 
     //Create scramble
+
+    function displayLastTime() {
+        let lastTimeElement = document.getElementById("display").innerHTML;
+        let displayElement = document.getElementById("lastTime");
+        allTimes.push(lastTimeElement);
+        allTimes.forEach(element => console.log(element));
+        let trElement = document.createElement("tr");
+        let tdElement = document.createElement("td");
+        tdElement.innerHTML = numberOfSolves + ". " + lastTimeElement;
+        console.log(tdElement.innerHTML);
+        trElement.appendChild(tdElement);
+        displayElement.prepend(trElement);
+        //let el = document.getElementById("lastEl");
+        //displayElement.insertBefore(trElement, el);
+        //displayElement.innerHTML = "<p>" + allTimes.join("</p><p>") + "<p>";
+        numberOfSolves++;
+    }
 
     function makeScramble() {
         var options = ["F", "F2", "F'", "R", "R2", "R'", "U", "U2", "U'", "B", "B2", "B'", "L", "L2", "L'", "D", "D2", "D'"]
