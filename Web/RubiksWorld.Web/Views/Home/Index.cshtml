@@ -20,12 +20,11 @@
 <body>
     <div class="stopwatch">
         <h1><span class="gold">CUBE</span> TIMER</h1>
+        <div><h4 id="scramble" class="my-2"></h4></div>
         <div>
             <span class="time" id="display">00:00:00</span>
         </div>
-
-        <h1 class="hide" onkeypress="start()"></h1>
-        <div class="controls">
+        @*<div class="controls">
             <button class="buttonPlay">
                 <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
 
@@ -35,16 +34,19 @@
             <button class="buttonReset">
                 <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
             </button>
-        </div>
+        </div>*@
     </div>
     <script src="script.js"></script>
 </body>
 </html>
 
 <script>
+    window.onload = function () {
+        this.makeScramble()
+    }
     let isStarted = false;
-    document.onkeydown = function(evt) {
-    evt = evt || window.event;
+    document.onkeyup = function (evt) {
+        evt = evt || window.event;
         if (evt.keyCode == 32 && isStarted == false) {
             isStarted = true;
             reset();
@@ -53,6 +55,7 @@
         else if (evt.keyCode == 32 && isStarted == true) {
             isStarted = false;
             pause();
+            makeScramble();
         }
     };
 
@@ -88,6 +91,10 @@
         document.getElementById("display").innerHTML = txt;
     }
 
+    function printScramble(txt) {
+        document.getElementById("scramble").innerHTML = txt;
+    }
+
     // Create "start", "pause" and "reset" functions
 
     function start() {
@@ -96,36 +103,104 @@
             elapsedTime = Date.now() - startTime;
             print(timeToString(elapsedTime));
         }, 10);
-        showButton("PAUSE");
+        //showButton("PAUSE");
     }
 
     function pause() {
         clearInterval(timerInterval);
-        showButton("PLAY");
+        //showButton("PLAY");
     }
 
     function reset() {
         clearInterval(timerInterval);
         print("00:00:00");
         elapsedTime = 0;
-        showButton("PLAY");
+       // showButton("PLAY");
     }
-
+    
     // Create function to display buttons
 
-    function showButton(buttonKey) {
-        const buttonToShow = buttonKey === "PLAY" ? playButton : pauseButton;
-        const buttonToHide = buttonKey === "PLAY" ? pauseButton : playButton;
-        buttonToShow.style.display = "block";
-        buttonToHide.style.display = "none";
-    }
+    //function showButton(buttonKey) {
+    //    const buttonToShow = buttonKey === "PLAY" ? playButton : pauseButton;
+    //    const buttonToHide = buttonKey === "PLAY" ? pauseButton : playButton;
+    //    buttonToShow.style.display = "block";
+    //    buttonToHide.style.display = "none";
+    //}
     // Create event listeners
 
-    let playButton = document.getElementById("playButton");
-    let pauseButton = document.getElementById("pauseButton");
-    let resetButton = document.getElementById("resetButton");
+    //let playButton = document.getElementById("playButton");
+    //let pauseButton = document.getElementById("pauseButton");
+    //let resetButton = document.getElementById("resetButton");
 
-    playButton.addEventListener("click", start);
-    pauseButton.addEventListener("click", pause);
-    resetButton.addEventListener("click", reset);
+    //playButton.addEventListener("click", start);
+    //pauseButton.addEventListener("click", pause);
+    //resetButton.addEventListener("click", reset);
+
+
+    //Create scramble
+
+    function makeScramble() {
+        var options = ["F", "F2", "F'", "R", "R2", "R'", "U", "U2", "U'", "B", "B2", "B'", "L", "L2", "L'", "D", "D2", "D'"]
+        var numOptions = [0, 1, 2, 3, 4, 5] // 0 = F, 1 = R, 2 = U, 3 = B, 4 = L, 5 = D
+        var scramble = []
+        var scrambleMoves = []
+        var bad = true
+
+        while (bad) {
+            scramble = []
+            for (var i = 0; i < 20; i++) {
+                scramble.push(numOptions[getRandomInt(6)])
+            }
+            // check if moves directly next to each other involve the same letter
+            for (var i = 0; i < 20 - 1; i++) {
+                if (scramble[i] == scramble[i + 1]) {
+                    bad = true
+                    break
+                } else {
+                    bad = false
+                }
+            }
+        }
+        //console.log(scramble)
+        // switch numbers to letters
+        var move
+        for (var i = 0; i < 20; i++) {
+            switch (scramble[i]) {
+                case 0:
+                    move = options[getRandomInt(3)] // 0,1,2
+                    scrambleMoves.push(move)
+                    break
+                case 1:
+                    move = options[getRandomIntBetween(3, 6)] // 3,4,5
+                    scrambleMoves.push(move)
+                    break
+                case 2:
+                    move = options[getRandomIntBetween(6, 9)] // 6,7,8
+                    scrambleMoves.push(move)
+                    break
+                case 3:
+                    move = options[getRandomIntBetween(9, 12)] // 9,10,11
+                    scrambleMoves.push(move)
+                    break
+                case 4:
+                    move = options[getRandomIntBetween(12, 15)] // 12,13,14
+                    scrambleMoves.push(move)
+                    break
+                case 5:
+                    move = options[getRandomIntBetween(15, 18)] // 15,16,17
+                    scrambleMoves.push(move)
+                    break
+            }
+        }
+        printScramble(scrambleMoves.join(' '))
+        console.log(scrambleMoves)
+    }
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max)) // returns up to max - 1
+    }
+
+    function getRandomIntBetween(min, max) { // return a number from min to max - 1. Ex. 3, 9 returns 3 - 8
+        return Math.floor(Math.random() * (max - min) + min)
+    }
 </script>
