@@ -25,28 +25,29 @@
             <span class="time" id="display">00:00:00</span>
         </div>
         @*<div class="controls">
-            <button class="buttonPlay">
-                <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+                <button class="buttonPlay">
+                    <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
 
-                <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
-            </button>
+                    <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+                </button>
 
-            <button class="buttonReset">
-                <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
-            </button>
-        </div>*@
+                <button class="buttonReset">
+                    <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+                </button>
+            </div>*@
     </div>
     <div style="height: 135px; overflow: auto; padding: 5px; margin: 10px; border: 1px solid #000000; background: #fff;">
         <table cellpadding="0" cellspacing="0">
             <tbody id="lastTime">
                 <tr id="lastEl">
-                    <td style="padding: 0 5px; margin: 0px;" >Hello</td>
+                    <td style="padding: 0 5px; margin: 0px;">Hello</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div>
-        <p>Average: <span id="averageTime"></span></p>
+        <p>Ao5: <span id="averageTimeOf5">00:00:00</span></p>
+        <p>Ao12: <span id="averageTimeOf12">00:00:00</span></p>
     </div>
     <span id="lastTime" display="block"></span>
     <script src="script.js"></script>
@@ -125,6 +126,12 @@
     function pause() {
         clearInterval(timerInterval);
         displayLastTime();
+        if (allTimes.length >= 5) {
+            average_time(str_array_to_time_array(allTimes));
+        }
+
+        //console.log(average_time(str_array_to_time_array(allTimes)));
+        // Object {minutes: 33, seconds: 41, milliseconds: 693}
         //showButton("PLAY");
     }
 
@@ -132,9 +139,9 @@
         clearInterval(timerInterval);
         print("00:00:00");
         elapsedTime = 0;
-       // showButton("PLAY");
+        // showButton("PLAY");
     }
-    
+
     // Create function to display buttons
 
     //function showButton(buttonKey) {
@@ -164,7 +171,6 @@
         let trElement = document.createElement("tr");
         let tdElement = document.createElement("td");
         tdElement.innerHTML = numberOfSolves + ". " + lastTimeElement;
-        console.log(tdElement.innerHTML);
         trElement.appendChild(tdElement);
         displayElement.prepend(trElement);
         //let el = document.getElementById("lastEl");
@@ -237,4 +243,65 @@
     function getRandomIntBetween(min, max) { // return a number from min to max - 1. Ex. 3, 9 returns 3 - 8
         return Math.floor(Math.random() * (max - min) + min)
     }
+
+    var str_to_time = function (time_str) {
+        var pieces = time_str.split(':');
+        return {
+            minutes: parseInt(pieces[0], 10),
+            seconds: parseInt(pieces[1], 10),
+            milliseconds: parseInt(pieces[2], 10)
+        };
+    };
+
+    var str_array_to_time_array = function (str_array) {
+        return str_array.map(str_to_time);
+    };
+
+    var average_time = function (time_array) {
+        var minutes = 0;
+        var seconds = 0;
+        var milliseconds = 0;
+
+        for (var i = 0; i < time_array.length; i++) {
+            minutes += time_array[i].minutes;
+            seconds += time_array[i].seconds;
+            milliseconds += time_array[i].milliseconds;
+        }
+
+        minutes /= time_array.length;
+        seconds /= time_array.length;
+        milliseconds /= time_array.length;
+
+        // Minutes and seconds may be fractional. Carry the fractions down.
+        seconds += (minutes - Math.floor(minutes)) * 60;
+        minutes = Math.floor(minutes);
+        milliseconds += (seconds - Math.floor(seconds)) * 1000;
+        seconds = Math.floor(seconds);
+        milliseconds = Math.round(milliseconds);
+        // if milliseconds is >= 1000, add a second.
+        seconds += Math.floor(milliseconds / 1000);
+        milliseconds %= 1000;
+        // If seconds >= 60, add a minute.
+        minutes += Math.floor(seconds / 60);
+        seconds %= 60;
+
+        var displayHours = (minutes >= 10) ? minutes : "0" + minutes;
+        var displayMins = (seconds >= 10) ? seconds : "0" + seconds;
+        var displaySeconds = (milliseconds >= 10) ? milliseconds : "0" + milliseconds;
+
+        let averageTimeOf5Element = document.getElementById("averageTimeOf5");
+        let averageTimeOf12Element = document.getElementById("averageTimeOf12");
+
+        averageTimeOf5Element.innerHTML = `${displayHours}:${displayMins}:${milliseconds}`;
+        averageTimeOf12Element.innerHTML = `${displayHours}:${displayMins}:${milliseconds}`;
+        console.log(`${displayHours}:${displayMins}:${milliseconds}`);
+        return {
+            minutes: minutes,
+            seconds: seconds,
+            milliseconds: milliseconds
+        };
+    };
+
+
+
 </script>
